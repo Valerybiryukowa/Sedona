@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>«Седона»</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page__body">
+    <header class="page-header page-header__inner">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg.svg" width="101.7" height="84" alt="Логотип «Седона»">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--current">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo, video.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="back-desktop">
+        <img class="back-desktop__back-desktope-image" src="img/back-mobile.jpg.jpg" width="320" height="214" alt="Ландшафт Седоны">
+        <img class="back-desktop__sedona-image" src="img/SEDONA.svg" width="229" height="39" alt="Надпись Седона">
+      </div>
+    </header>
+
+    <main class="page-photo-main">
+
+        <h1 class="visually-hidden">Страница каталога</h1>
+
+    <section class="photo">
+        <div class="photo__wrapper">
+            <h2 class="photo__title">Фото и видео</h2>
+            <p class="photo__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+            <img class="photo__imgline" src="img/line 8.svg" width="320" height="1" alt="Разделительная линия">
+        </div>
+    </section>
+
+    <section class="photo-list">
+        <div class="photo-list__wrapper">
+            <h2 class="visually-hidden">Каталог фото и видео Седоны</h2>
+            <ul class="photo-list__list">
+                <li class="photo-list__item">
+                    <img class="photo-list__vast" src="img/photo-1-mobile.jpg.jpg" width="280" height="280" alt="Закат, дорога, лесополоса">
+                    <h3 class="photo-list__title">Неродные просторы</h3>
+                    <p class="photo-list__authorname">Автор фото: Борис</p>
+                    <p class="photo-list__likes">1350</p>
+                    <img class="photo-list__imgline" src="img/line 9.svg" width="320" height="1" alt="Разделительная линия">
+                </li>
+                <li class="photo-list__item">
+                    <img class="photo-list__vegetation" src="img/photo-2-mobile.jpg.jpg" width="280" height="280" alt="На переднем фото растение, а на заднем скалистые горы">
+                    <h3 class="photo-list__title">Местная растительность</h3>
+                    <p class="photo-list__authorname">Автор фото: Сергей</p>
+                    <p class="photo-list__likes">143</p>
+                    <img class="photo-list__imgline" src="img/line 10.svg" width="320" height="1" alt="Разделительная линия">
+                </li>
+                <li class="photo-list__item">
+                    <img class="photo-list__road" src="img/photo-3-mobile.jpg.jpg" width="280" height="280" alt="Ветвистая дорога посреди леса">
+                    <h3 class="photo-list__title">Дорога на север</h3>
+                    <p class="photo-list__authorname">Автор фото: Петр</p>
+                    <p class="photo-list__likes">96</p>
+                    <img class="photo-list__imgline" src="img/line 11.svg" width="320" height="1" alt="Разделительная линия">
+                </li>
+                <li class="photo-list__item">
+                    <img class="photo-list__bridge" src="img/photo-4-desktop 1.jpg" width="280" height="280" alt="Скалистая гора в виде моста">
+                    <h3 class="photo-list__title">Мост дьявола</h3>
+                    <p class="photo-list__authorname">Автор фото: Антон</p>
+                    <p class="photo-list__likes">254</p>
+                    <img class="photo-list__imgline" src="img/line 12.svg" width="320" height="1" alt="Разделительная линия">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="video">
+        <div class="video__wrapper">
+            <h2 class="visually-hidden">Видеопрезентация Седоны</h2>
+            <h3 class="video__title">Все еще сомневаетесь?</h3>
+            <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <img class="video__video-mobile" src="img/video-mobile.jpg.jpg" width="320" height="201" alt="Проезжая дорога посреди скалистых гор">
+        </div>
+    </section>
+
+    <section class="controls-video">
+        <div class="controls-video__wrapper">
+            <h2 class="visually-hidden">Видеоплеер</h2>
+            <!-- уровень громкости
+            <div class="controls-video__scale">
+                <div class="controls-video__bar" style="
+                width: 30%;
+                margin-left: 20%
+                "></div>
+            </div>
+            <div class="controls-video__toggle-min" tabindex="0" style="
+            left: 20%
+            "></div>
+            <div class="controls-video__toggle-max" tabindex="0" style="
+            left: 50%
+            "></div>
+        </div>
+        <div class="controls-video">
+            <label class="controls-video__minvolume">
+                от <input type="number" name="min-volume" value="0">
+            </label>
+            <label class="controls-video__maxvolume">
+                до <input type="number" name="max-volume" value="100">
+            </label>
+        </div>
+    -->
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__hashtag hashtag">
+        <b>#VISITSEDONA</b>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фэйсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Мы в Ютубе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" width="26.9" height="34.1" alt="Иконка HTML Academy"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
