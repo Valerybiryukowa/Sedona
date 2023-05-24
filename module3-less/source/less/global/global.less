@@ -1,25 +1,17 @@
-@font-face {
-    font-family: "PT Sans";
-    src:
-    url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,700&family=Roboto&display=swap.woff2') format(woff2),
-    url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,700&family=Roboto&display=swap.woff') format(woff);
-    font-weight: 700;
-    font-style: normal;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-@light-blue-color: #81B3D2;
-@grey-color: #EEEEEE;
-@light-black-color: #333333;
-@light-grey-color: #F2F2F2;
-@black-color: #000000;
-@grey-2-color: #E6E6E6;
-
-body {
-    margin: 0;
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-/*потом убери этот стиль */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
