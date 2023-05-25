@@ -1,6 +1,16 @@
 .page-header {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+
+    @media (min-width: @tablet-width) {
+        width: 90%;
+        max-width: 768px;
+        }
+        
+        @media (min-width: @desktop-width) {
+        width: 80%;
+        max-width: 1200px;
+        }
 }
 
 .page-header__logo {
@@ -9,4 +19,3 @@
     height: 56px;
     z-index: 1;
 }
-

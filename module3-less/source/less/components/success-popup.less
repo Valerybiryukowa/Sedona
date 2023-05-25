@@ -1,7 +1,30 @@
 .success-popup {
-    width: 320px;
-    height: 323px;
+    width: 100%;
+    max-width: 280px;
+    min-height: 323px;
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+
+    @media (min-width: @tablet-width) {
+    width: 90%;
+    max-width: 458px;
+    }
+    
+    @media (min-width: @desktop-width) {
+    width: 80%;
+    max-width: 458px;
+    }
+}
+
+.success-popup__wrapper {
+    @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: center;
+    }
+    
+    @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: center;
+    }
 }
 
 .success-popup__gratitude {

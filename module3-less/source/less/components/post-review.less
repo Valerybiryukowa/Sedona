@@ -1,3 +1,30 @@
+.posr-review {
+    width: 100%;
+    max-width: 279px;
+
+    @media (min-width: @tablet-width) {
+    width: 90%;
+    max-width: 648px;
+    }
+
+    @media (min-width: @desktop-width) {
+    width: 80%;
+    max-width: 960px;
+    }
+}
+
+.contactinfo__form {
+    @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: center;
+    }
+
+    @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: center;
+    }
+}
+
 .post-review__title {
     font-size: 18px;
     margin-bottom: 15px;
@@ -17,4 +44,23 @@
     font-weight: 700;
     width: 280px;
     height: 58px;
+}
+
+.post-review__fields {
+    font-weight: 400;
+    color: @light-black-color;
+}
+
+.post-review__bf {
+    @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 648px;
+    }
+
+    @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    }
 }

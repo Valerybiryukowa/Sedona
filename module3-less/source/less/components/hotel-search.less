@@ -1,5 +1,30 @@
 .hotel-search {
-    width: 320px;
+    width: 100%;
+    max-width: 280px;
+
+    @media (min-width: @tablet-width) {
+    width: 90%;
+    max-width: 458px;
+    }
+
+    @media (min-width: @desktop-width) {
+    width: 80%;
+    max-width: 458px;
+    }
+}
+
+.hotel-search__wrapper {
+    @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+    @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
 }
 
 .hotel-search__description {

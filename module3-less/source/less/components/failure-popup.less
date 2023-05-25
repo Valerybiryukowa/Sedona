@@ -1,7 +1,30 @@
 .failure-popup {
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
-    width: 320px;
+    width: 100%;
+    max-width: 237px;
     height: 280px;
+
+    @media (min-width: @tablet-width) {
+    width: 90%;
+    max-width: 307px;
+    }
+
+    @media (min-width: @desktop-width) {
+    width: 80%;
+    max-width: 307px;
+    }
+}
+
+.failure-popup__wrapper {
+    @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: center;
+    }
+
+    @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: center;
+    }
 }
 
 .failure-popup__warning {

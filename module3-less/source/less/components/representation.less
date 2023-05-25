@@ -1,3 +1,32 @@
+.representation {
+    width: 100%;
+    max-width: 297px;
+
+    @media (min-width: @tablet-width) {
+    width: 90%;
+    max-width: 283px;
+    }
+
+    @media (min-width: @desktop-width) {
+    width: 80%;
+    max-width: 386px;
+    }
+}
+
+.representation__form {
+    @media (min-width: @tablet-width) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    @media (min-width: @desktop-width) {
+        display: flex;
+        justify-content: space-between;
+    
+    }
+}
+
 .representation__title {
     padding-bottom: 19px;
 }

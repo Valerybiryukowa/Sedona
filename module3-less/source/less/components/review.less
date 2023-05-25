@@ -1,6 +1,31 @@
 .review {
-    width: 320px;
+    width: 100%;
+    max-width: 306px;
     margin-bottom: 16px;
+
+    @media (min-width: @tablet-width) {
+    width: 90%;
+    max-width: 434px;
+    }
+
+    @media (min-width: @desktop-width) {
+    width: 80%;
+    max-width: 434px;
+    }
+}
+
+.review__wrapper {
+    @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
 }
 
 .review__description {

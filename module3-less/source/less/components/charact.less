@@ -1,48 +1,67 @@
+.charact {
+    width: 100%;
+    max-width: 320px;
+
+    @media (min-width: @tablet-width) {
+    width: 90%;
+    max-width: 736px;
+    }
+
+    @media (min-width: @desktop-width) {
+    width: 80%;
+    max-width: 1122px;
+    }
+}
+
 .charact__header {
     background-color: white;
     padding-top: 32px;
     margin: 0;
 
+    @media (min-width: @tablet-width) {
+    width: 90%;
+    max-width: 520px;
+    }
+
+    @media (min-width: @desktop-width) {
+    width: 90%;
+    max-width: 483px;
+    }
+
     outline: 5px solid fade(red, 50%);
     outline-offset: -5px;
 }
 
-@media (min-width: @tablet-width) {
-    .charact__slogan {
-        display: flex;
-        justify-content: center;
-        width: 520px;
+.charact__slogan {
+    max-width: 280px;
+
+    @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+    }
+
+    @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: center;
     }
 }
 
-@media (min-width: @desktop-width) {
-    .charact__slogan {
-        display: flex;
-        justify-content: center;
-        width: 483px;
-    }
-}
-
-@media (min-width: @tablet-width) {
-    .charact__intro {
-        display: flex;
-        justify-content: center;
-        width: 520px;
-    }
-}
-
-@media (min-width: @desktop-width) {
-    .charact__intro {
-        display: flex;
-        justify-content: center;
-        width: 483px;
-    }
-}
 
 .charact__intro {
     font-weight: 400;
     font-size: 14px;
     margin: 0;
+    max-width: 280px;
+
+    @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+}
+
+    @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: center;
+}
 }
 
 .charact__list {
@@ -53,13 +72,11 @@
     @media (min-width: @tablet-width) {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        width: 768px;
     }
 
     @media (min-width: @desktop-width) {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        width: 1200px;
     }
 
     outline: 5px solid fade(green, 50%);
@@ -73,6 +90,10 @@
 
 .charact__item h3 {
     margin: 0;
+}
+
+.charact__imgbridge {
+    order: 1;
 }
 
 .charact__item {
@@ -90,6 +111,16 @@
     margin: 0;
     padding: 0;
 
+    @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    }
+
     outline: 5px solid fade(green, 50%);
   outline-offset: -5px;
 }
@@ -100,6 +131,7 @@
 
 .charact__item--grey {
     margin-bottom: 50px;
+    max-width: 276px;
 }
 
 .charact__item--grey {

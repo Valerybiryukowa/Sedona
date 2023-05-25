@@ -1,9 +1,42 @@
 .video {
-    width: 266px;
+    width: 100%;
+    max-width: 320px;
+
+    @media (min-width: @tablet-width) {
+    width: 90%;
+    max-width: 648px;
+    }
+    
+    @media (min-width: @desktop-width) {
+    width: 80%;
+    max-width: 800px;
+    }
+}
+
+.video__title {
+    @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: center;
+    }
+
+    @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: center;
+    }
 }
 
 .video__description {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+
+    @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: center;
+    }
+    
+    @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: center;
+    }
 }
