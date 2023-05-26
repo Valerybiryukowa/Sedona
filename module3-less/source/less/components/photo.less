@@ -13,15 +13,37 @@
     }
 }
 
+.photo__wrapper {
+    margin: 0 auto 32px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 67px;
+  }
+}
+
 .photo__title {
+    text-align: center;
+    margin: 0 0 32px;
+    font-size: 18px;
+
     @media (min-width: @tablet-width) {
     display: flex;
-    flex-direction: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 65px;
+    margin-bottom: 65px;
     }
 
     @media (min-width: @desktop-width) {
     display: flex;
-    flex-direction: center;
+    justify-content: center;
+    margin-top: 102px;
+    margin-bottom: 67px;
     }
 }
 
