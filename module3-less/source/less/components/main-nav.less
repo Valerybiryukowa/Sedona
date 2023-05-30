@@ -1,22 +1,24 @@
 .main-nav {
     position: relative;
-    background-color: @light-blue-color;
+    background-color: white;
     line-height: 40px;
     width: 100%;
     max-width: 320px;
-    min-height: 56px;
+    height: 56px;
 
-    outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
 
     @media (min-width: @tablet-width) {
     width: 90%;
     max-width: 723px;
+    background-color: white;
+    color: @black-color;
     }
 
     @media (min-width: @desktop-width) {
     width: 80%;
     max-width: 1098px;
+    background-color: white;
+    color: @black-color;
     }
 }
 
@@ -25,10 +27,15 @@
     top: 0;
     right: 0;
     z-index: 2;
+    display: block;
     width: 23px;
     height: 22px;
     cursor: pointer;
     border: none;
+
+    @media (min-width: @tablet-width) {
+    display: none;
+    }
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -108,15 +115,11 @@
 
     @media (min-width: @tablet-width) {
     order: 1;
-    display: flex;
-    justify-content: space-between;
     
     }
 
     @media (min-width: @desktop-width) {
     order: 1;    
-    display: flex;
-    justify-content: space-between;
     }
 }
 

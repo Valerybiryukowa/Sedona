@@ -14,7 +14,7 @@
       <a class="page-header__logo">
         <img src="img/logotype-mobile.svg.svg" width="102" height="84" alt="Логотип «Седона»">
       </a>
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -41,7 +41,7 @@
           </ul>
         </div>
       </nav>
-      <img class="charact__imgtext" src="img/text-index.svg.svg" width="282" height="214" alt="Надпись добро пожаловать в Седону">
+      <img class="page-header__imgtext" src="img/text-index.svg.svg" width="282" height="214" alt="Надпись добро пожаловать в Седону">
     </header>
 
     <main class="page-main">
@@ -67,8 +67,8 @@
           <ol class="charact__list">
             <li class="charact__item">
               <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
-              <p>— №1 —<br>
-              СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+              <p>— №1 </p>
+              <p>СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </li>
             <img class="charact__imgcity" src="img/photo-city@1x 1.jpg" width="320" height="260" alt="Фото города №1, горы, здание, флаги, деревья">
           </ol>
@@ -100,8 +100,8 @@
           <ol class="charact__list">
             <li class="charact__item charact__item--right">
               <h3>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
-              <p>— №2 —<br>
-              ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
+              <p>— №2 </p>
+              <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
               </li>
             <img class="charact__imgbridge" src="img/photo-bridge@1x 1.jpg" width="320" height="260" alt="Фото моста Дьявола, скалистый мост, а вокруг зеленые насаждения">
           </ol>
@@ -168,6 +168,24 @@
         </div>
       </div>
     </footer>
+
+
+    <script>
+        var navMain = document.querySelector('.main-nav');
+        var navToggle = document.querySelector('.main-nav__toggle');
+        
+        navMain.classList.remove('main-nav--nojs');
+        
+        navToggle.addEventListener('click', function() {
+          if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+          } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+          }
+        });
+      </script>
 
 </body>
 </html>
