@@ -52,7 +52,7 @@
         <div class="review__wrapper">
             <h2 class="review__title">Оставьте свой отзыв</h2>
             <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-            <img class="photo__imgline" src="img/line 7.svg" width="320" height="1" alt="Разделительная линия">
+            <img class="review__imgline" src="img/line 7.svg" width="320" height="1" alt="Разделительная линия">
         </div>
     </section>
 
@@ -101,15 +101,15 @@
                     <legend>Ваше общее впечатление:</legend>
                     <ul class="impression__list">
                         <li class="impression__item">
-                            <input id="impression__positive" type="radio" name="positive" value="Скорее положительное" checked>
+                            <input id="impression__positive" class="impression__custom" type="radio" name="positive" value="Скорее положительное" checked>
                             <label for="impression__positive">Скорее положительное</label>
                         </li>
                         <li class="impression__item">
-                            <input id="impression__negative" type="radio" name="negative" value="Скорее отрицательное">
+                            <input id="impression__negative" class="impression__custom" type="radio" name="negative" value="Скорее отрицательное">
                             <label for="impression__negative">Скорее отрицательное</label>
                         </li>
                         <li class="impression__item">
-                            <input id="impression__problem" type="radio" name="problem" value="Затрудняюсь ответить">
+                            <input id="impression__problem" class="impression__custom" type="radio" name="problem" value="Затрудняюсь ответить">
                             <label for="impression__problem">Затрудняюсь ответить</label>
                         </li>
                     </ul>
@@ -125,19 +125,19 @@
                 <legend>Посещенные достопримечательности:</legend>
                 <ul class="attractions__list">
                     <li class="attractions__item">
-                        <input id="attractions__bridge" type="checkbox" name="bridge" checked>
+                        <input id="attractions__bridge" class="attractions__custom" type="checkbox" name="bridge" checked>
                         <label for="attractions__bridge">Мост Дьявола</label>
                     </li>
                     <li class="attractions__item">
-                        <input id="attractions__mountain" type="checkbox" name="mountain" checked>
+                        <input id="attractions__mountain" class="attractions__custom" type="checkbox" name="mountain" checked>
                         <label for="attractions__mountain">Гора-Колокол</label>
                     </li>
                     <li class="attractions__item">
-                        <input id="attractions__park" type="checkbox" name="park" checked>
+                        <input id="attractions__park" class="attractions__custom" type="checkbox" name="park" checked>
                         <label for="attractions__park">Слайд-парк</label>
                     </li>
                     <li class="attractions__item">
-                        <input id="attractions__rocks" type="checkbox" name="rocks">
+                        <input id="attractions__rocks" class="attractions__custom" type="checkbox" name="rocks">
                         <label for="attractions__rocks">Красные скалы</label>
                     </li>
                 </ul>
@@ -159,8 +159,8 @@
         <div class="post-review__wrapper">
             <h2 class="post-review__title">Опишите свои эмоции:</h2>
             <form class="post-review__form" action="https://echo.htmlacademy.ru" method="post">
-                <p class="post-review__item"></p>
-                <input id="post-review__description" type="text" name="description" placeholder="Опишите подробно все свои восторги" required>
+                <label class="visually-hidden" for="post-review">Отзыв</label>
+                <textarea id="post-review__description" class="post-review__custom" name="description" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
             </form>
             <div class="post-review__bf">
             <button class="post-review__button" type="button">ОТПРАВИТЬ ОТЗЫВ</button>
@@ -203,6 +203,7 @@
           </div>
         </div>
       </footer>
-  
+
+  <script src="js/main-nav.js"></script>
 </body>
 </html

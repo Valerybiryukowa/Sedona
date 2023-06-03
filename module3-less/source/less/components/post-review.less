@@ -1,10 +1,12 @@
-.posr-review {
+.post-review {
     width: 100%;
     max-width: 279px;
 
     @media (min-width: @tablet-width) {
     width: 90%;
     max-width: 648px;
+    padding-right: 60px;
+    padding-left: 60px;
     }
 
     @media (min-width: @desktop-width) {
@@ -27,14 +29,14 @@
 
 .post-review__title {
     font-size: 18px;
-    margin-bottom: 15px;
-}
+    padding-bottom: 15px;
+    align-items: center;
 
-.post-review__description {
-    background-color: @light-grey-color;
-    box-sizing: border-box;
-    width: 279px;
-    height: 160px;
+    @media (min-width: @tablet-width) {
+        font-size: 21px;
+        text-align: center;
+        padding-bottom: 54px;
+    }
 }
 
 .post-review__button {
@@ -44,6 +46,24 @@
     font-weight: 700;
     width: 280px;
     height: 58px;
+    border: none;
+
+    &:hover {
+        background-color: @dark-blue-color;
+    }
+
+    &:active {
+        background-color: @dark2-blue-color;
+        color: rgba(white, 0.3);
+    }
+
+    @media (min-width: @tablet-width) {
+        width: 324px;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 480px;
+    }
 }
 
 .post-review__fields {
@@ -56,6 +76,7 @@
     display: flex;
     justify-content: space-between;
     max-width: 648px;
+    padding-top: 58px;
     }
 
     @media (min-width: @desktop-width) {
@@ -63,4 +84,29 @@
     justify-content: space-between;
     max-width: 960px;
     }
+}
+
+.post-review__custom {
+    background-color: @light-grey-color;
+    box-sizing: border-box;
+    width: 279px;
+    height: 160px;
+    border: none;
+
+    @media (min-width: @tablet-width) {
+        width: 648px;
+        height: 160px;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 960px;
+        height: 160px;
+    }
+}
+
+::-webkit-input-placeholder {
+    color: @black-color;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
 }

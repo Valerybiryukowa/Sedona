@@ -1,25 +1,32 @@
 .failure-popup {
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
     width: 100%;
-    max-width: 237px;
+    max-width: 320px;
     height: 280px;
 
     @media (min-width: @tablet-width) {
     width: 90%;
     max-width: 307px;
+    height: 347px;
+    padding-left: 46px;
+    padding-right: 47px;
     }
 
     @media (min-width: @desktop-width) {
     width: 80%;
     max-width: 307px;
+    height: 347px;
     }
 }
 
 .failure-popup__wrapper {
+    padding-bottom: 25px;
+
     @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 49px;
     }
 
     @media (min-width: @desktop-width) {
@@ -29,20 +36,51 @@
     }
 }
 
+.failure-popup__title {
+    text-align: center;
+    font-size: 21px;
+
+    @media (min-width: @tablet-width) {
+        font-size: 30px;
+        text-align: center;
+        line-height: 40px;
+    }
+}
+
 .failure-popup__warning {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 24px;
     padding-top: 10px;
+    padding-bottom: 22px;
+    text-align: center;
+
+    @media (min-width: @tablet-width) {
+        padding-bottom: 27px;
+    }
 }
 
 .failure-popup__button {
     background-color: @light-blue-color;
     width: 180px;
     height: 58px;
-    margin-top: 22px;
-    margin-bottom: 35px;
     color: #ffffff;
     font-weight: 700;
     font-size: 18px;
+    border: none;
+    text-align: center;
+
+    @media (min-width: @tablet-width) {
+        width: 272px;
+        text-align: center;
+    }
+
+    &:hover {
+        background-color: @dark-blue-color;
+    }
+
+    &:active {
+        background-color: @dark2-blue-color;
+        color: rgba(white, 0.3);
+    }
 }

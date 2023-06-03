@@ -28,14 +28,10 @@
 
     @media (min-width: @tablet-width) {
         padding: 0;
-        padding-top: 16px;
-        padding-bottom: ;
         color: @black-color;
         background: none;
         border: none;
     }
-
-    
 }
 
 .main-nav--nojs .site-list__item {
@@ -44,7 +40,6 @@
 
 
 .site-list__item {
-    
 
     @media (min-width: @tablet-width) {
         padding-right: 33px;
@@ -77,6 +72,17 @@
         &:active {
             color: @black-color;
             opacity: 0.3;
+        }
+    }
+
+    @media (max-width: @mobile-width-only) {
+        &:hover {
+            background-color: @dark-blue-color;
+        }
+
+        &:active {
+            background-color: @dark2-blue-color;
+            color: rgba(@white-color, @opacity-href-active);
         }
     }
 }

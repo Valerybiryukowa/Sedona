@@ -1,21 +1,24 @@
 .success-popup {
     width: 100%;
     max-width: 280px;
-    min-height: 323px;
+    height: 323px;
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 
     @media (min-width: @tablet-width) {
     width: 90%;
-    max-width: 458px;
+    max-width: 640px;
+    height: 347px;
     }
     
     @media (min-width: @desktop-width) {
     width: 80%;
-    max-width: 458px;
+    max-width: 640px;
+    height: 347px;
     }
 }
 
 .success-popup__wrapper {
+
     @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
@@ -31,9 +34,11 @@
 
 .success-popup__gratitude {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
     color: @light-black-color;
     padding-top: 10px;
+    text-align: center;
+    padding-bottom: 29px;
 }
 
 .success-popup__button {
@@ -43,6 +48,30 @@
     width: 280px;
     height: 58px;
     font-size: 18px;
-    margin-top: 49px;
     margin-bottom: 20px;
+    border: none;
+
+    @media (min-width: @tablet-width) {
+        width: 458px;
+    }
+
+    &:hover {
+        background-color: @dark-blue-color;
+    }
+
+    &:active {
+        background-color: @dark2-blue-color;
+        color: rgba(white, 0.3);
+    }
+}
+
+.success-popup__title {
+    font-size: 18px;
+    padding-top: 38px;
+    text-align: center;
+
+    @media (min-width: @tablet-width) {
+        font-size: 30px;
+        padding-top: 55px;
+    }
 }

@@ -2,15 +2,21 @@
     width: 100%;
     max-width: 280px;
     position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
 
     @media (min-width: @tablet-width) {
     width: 90%;
     max-width: 648px;
+    padding-left: 60px;
+    padding-right: 60px;
     }
 
     @media (min-width: @desktop-width) {
     width: 80%;
     max-width: 960px;
+    padding-left: 119px;
+    padding-right: 120px;
     }
 }
 
@@ -30,11 +36,19 @@
 
 .contactinfo__title {
     padding-bottom: 17px;
+    padding-top: 40px;
+    font-size: 18px;
     margin: 0;
-  text-align: center;
+    text-align: center;
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 71px;
+    text-align: center;
   }
 }
 
@@ -43,6 +57,7 @@
     label {
         font-weight: 400;
         font-size: 14px;
+        padding-bottom: 8px;
     }
 }
 
@@ -52,6 +67,24 @@
         background-color: @light-grey-color;
         width: 280px;
         height: 58px;
+
+        @media (min-width: @tablet-width) {
+            width: 648px;
+        }
+
+        @media (min-width: @desktop-width) {
+            width: 315px;
+        }
+
+        &:hover {
+            background-color: @grey-3-color;
+        }
+
+        &:active {
+            background-color: white;
+            box-sizing: border-box;
+            border: 4px solid @grey-3-color;
+        }
     }
 }
 
@@ -61,5 +94,22 @@
         font-weight: 700px;
         font-size: 18px;
         color: @black-color;
+    }
+}
+
+.contactinfo__item {
+    margin-right: 79px;
+    padding-bottom: 28px;
+
+    @media (min-width: @desktop-width) {
+        display: flex;
+        flex-direction: center;
+        padding-bottom: 51px;
+    }
+}
+
+.contactinfo__imgline {
+    @media (min-width: @tablet-width) {
+        display: none;
     }
 }

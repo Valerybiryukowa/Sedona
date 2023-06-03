@@ -1,10 +1,15 @@
 .infrastructure {
     width: 100%;
     max-width: 288px;
+    padding-top: 35px;
+    padding-left: 69px;
 
     @media (min-width: @tablet-width) {
     width: 90%;
     max-width: 701px;
+    grid-column: 1 / -1;
+    padding: 0;
+    text-align: center;
     }
 
     @media (min-width: @desktop-width) {
@@ -14,46 +19,110 @@
 }
 
 .infrastructure__list {
-    list-style: none;
-    margin: 0;
+    display: grid;
+    list-style-type: none;
     padding: 0;
-    margin-top: 35px;
-    padding-left: 69px;
+    margin: 0;
 
     @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
         }
 
+    @media (max-width: @mobile-width-only) {
+        row-gap: 26px;
+    }
+}
+
+.infrastructure__title {
+    margin: 0 0 16px;
+    position: relative;
+    word-break: break-word;
+    font-size: 18px;
+
     @media (min-width: @desktop-width) {
-    display: flex;
-    justify-content: space-between;
+        margin: 0 0 22px;
+        font-size: 21px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+
+        @media (max-width: @mobile-width-only) {
+            top: 50%;
+            left: -52px;
+            width: 46px;
+            height: 50px;
+            transform: translateY(-50%);
+            background-position: left center;
         }
+
+        @media (min-width: @tablet-width) {
+            top: -126px;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            transform: translateX(-50%);
+            background-position: center bottom;
+        }
+    }
+
+    &--housing::before {
+        background-image: url("../img/icon-house.svg.svg");
+
+        @media (max-width: @mobile-width-only) {
+            background-size: 39px auto;
+        }
+    }
+
+    &--souvenirs::before {
+        background-image: url("../img/icon-gift.svg.svg");
+
+        @media (max-width: @mobile-width-only) {
+            background-size: 32px auto;
+        }
+    }
+
+    &--food::before {
+        background-image: url("../img/icon-burger.svg.svg");
+
+        @media (max-width: @mobile-width-only) {
+            background-size: 40px auto;
+        }
+    }
 }
 
 .infrastructure__item {
     text-align: left;
-    margin-bottom: 26px;
+    max-width: 288px;
+
 
     @media (min-width: @tablet-width) {
-        margin-top: 158px;
-        margin-bottom: 60px;
-        margin-right: 31px;
-        padding-right: 73px;
+        padding: 158px 38px 60px;
+        min-height: ;
         text-align: center;
         line-height: 26px;
     }
 
     @media (min-width: @desktop-width) {
-        margin-top: 159px;
-        margin-bottom: 80px;
-        margin-right: 104px;
-        padding-right: 73px;
+        padding-top: 159px;
+        padding-bottom: 80px;
+        padding-right: 104px;
+        text-align: center;
+    }
+
+    &--food {
+        @media (min-width: @tablet-width) {
+            grid-column: 2;
+            grid-row: 1;
+        }
     }
 }
 
 
 .infrastructure__description {
     font-weight: 400;
+    margin: 0;
 }
 
