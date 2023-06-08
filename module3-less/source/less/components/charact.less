@@ -32,7 +32,7 @@
     }
 
     @media (min-width: @desktop-width) {
-    width: 90%;
+    width: 80%;
     max-width: 483px;
     margin-bottom: 41px;
     padding-top: 55px;
@@ -186,6 +186,14 @@
 
 .charact__imgbridge {
     order: 1;
+    width: 100%;
+    display: block;
+    min-height: 260px;
+    object-fit: cover;
+
+    @media (min-width: @tablet-width) {
+        height: 256px;
+    }
 }
 
 .charact__item {
@@ -251,5 +259,17 @@
 .charact__imgline {
     @media (min-width: @tablet-width) {
         display: none;
+    }
+}
+
+.charact__imgcity {
+    width: 100%;
+    display: block;
+    min-height: 260px;
+    object-fit: cover;
+
+    @media (min-width: @tablet-width) {
+        height: 256px;
+        grid-column: 2 / span 2;
     }
 }

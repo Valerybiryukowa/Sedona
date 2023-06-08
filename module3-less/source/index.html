@@ -12,7 +12,11 @@
 <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo">
+        <picture>
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg.svg">
+        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg.svg">
         <img src="img/logotype-mobile.svg.svg" width="102" height="84" alt="Логотип «Седона»">
+        </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -72,8 +76,12 @@
               <p>— №1 </p>
               <p>СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </li>
-            <img class="charact__imgcity" src="img/photo-city@1x 1.jpg" width="320" height="260" alt="Фото города №1, горы, здание, флаги, деревья">
-          </ol>
+        <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-city desktop@1x.jpg 1x, img/photo-city desktop@1x@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-city tablet@1x.jpg 1x, img/photo-city tablet@1x@2x.jpg 2x">
+        <img class="charact__imgcity" src="img/photo-city@1x 1.jpg" srcset="img/photo-city@1x 1@2x.jpg" alt="Фото города №1, горы, здание, флаги, деревья">
+        </picture>
+         </ol>
         </div>
       </section>
 
@@ -108,8 +116,14 @@
               <p>— №2 </p>
               <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
               </li>
-            <img class="charact__imgbridge" src="img/photo-bridge@1x 1.jpg" width="320" height="260" alt="Фото моста Дьявола, скалистый мост, а вокруг зеленые насаждения">
-          </ol>
+              <div class="charact__picture">
+        <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-bridge desktop@1x.jpg 1x, img/photo-bridge desktop@1x@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-bridge tablet@1x.jpg 1x, img/photo-bridge tablet@1x@2x.jpg 2x">
+            <img class="charact__imgbridge" src="img/photo-bridge@1x 1.jpg" srcset="img/photo-bridge@1x 1@2x.jpg alt="Фото моста Дьявола, скалистый мост, а вокруг зеленые насаждения">
+        </picture>
+    </div>
+        </ol>
             <ol class="charact__list--grey">
             <li class="charact__item--grey">
               <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>

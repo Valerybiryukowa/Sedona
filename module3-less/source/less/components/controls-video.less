@@ -1,32 +1,48 @@
-.controls-video {
+
+.controls-video__wrapper {
     width: 100%;
-    max-width: 280px;
+  position: relative;
+}
 
+.controls-video__img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    
     @media (min-width: @tablet-width) {
-        width: 90%;
-        max-width: 648px;
-    }
-
-    @media (min-width: @desktop-width) {
-        width: 80%;
-        max-width: 800px;
+        height: 500px;
     }
 }
 
-.controls-video__wrapper {
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 77px;
-    text-align: center;
+.controls-video {
+    margin: 0 auto;
+}
 
-    @media (min-width: @tablet-width) {
-    padding-right: 60px;
-    padding-left: 60px;
-    }
+input[type=range] {
+    width: 100%;
+    -webkit-appearance: none;
+}
 
-    @media (min-width: @desktop-width) {
-    padding-right: 199px;
-    padding-left: 201px;
-    text-align: center;
-    }
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border-radius: 50%;
+    height: 13px;
+    width: 13px;
+    cursor: pointer;
+    background-color: @white-color;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 235px;
+    height: 3px;
+    cursor: pointer;
+    background: @white-color;
+    opacity: 0.2;
+}
+
+.control-panel__volume {
+    width: 280px;
+    height: 45px;
+    background: @black-color;
+    opacity: 0.6;
 }
