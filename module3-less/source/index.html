@@ -8,8 +8,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,700&family=Roboto&display=swap">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
+
     <header class="page-header">
       <a class="page-header__logo">
         <picture>
@@ -184,7 +189,10 @@
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" width="26.9" height="34.1" alt="Иконка HTML Academy"></a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__link-icon" width="26.9" height="34.1">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+            </svg>
         </div>
       </div>
     </footer>

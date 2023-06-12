@@ -4,12 +4,12 @@
 
     @media (min-width: @tablet-width) {
     width: 90%;
-    max-width: 736px;
+    max-width: 768px;
     }
 
     @media (min-width: @desktop-width) {
     width: 80%;
-    max-width: 1122px;
+    max-width: 1200px;
     }
 }
 
@@ -98,15 +98,19 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: 100%;
+    max-width: 320px;
 
     @media (min-width: @tablet-width) {
         display: grid;
-        grid-template-columns: 45% 55%;
+        grid-template-columns: 3fr 4fr;
+        max-width: 768px;
     }
 
     @media (min-width: @desktop-width) {
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 2fr 3fr;
+        max-width: 1200px;
     }
 }
 
@@ -117,7 +121,7 @@
 
     @media (min-width: @tablet-width) {
         display: grid;
-        grid-template-columns: 45% 55%;
+        grid-template-columns: 60% 40%;
     }
 
     @media (min-width: @desktop-width) {
@@ -135,6 +139,7 @@
     padding-bottom: 39px;
     padding-left: 18px;
     padding-right: 20px;
+    position: relative;
 
     @media (min-width: @tablet-width) {
     padding-top: 40px;
@@ -265,11 +270,10 @@
 .charact__imgcity {
     width: 100%;
     display: block;
-    min-height: 260px;
+    height: 260px;
     object-fit: cover;
 
     @media (min-width: @tablet-width) {
         height: 256px;
-        grid-column: 2 / span 2;
     }
 }
