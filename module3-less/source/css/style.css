@@ -805,6 +805,90 @@ img {
     font-size: 18px;
   }
 }
+.infrastructure__house {
+  position: absolute;
+  top: 1200px;
+  left: 21px;
+  right: 9px;
+  width: 39px;
+  height: 37px;
+}
+@media (min-width: 768px) {
+  .infrastructure__house {
+    position: absolute;
+    top: 1110px;
+    left: 90px;
+    right: 180px;
+    width: 75px;
+    height: 72px;
+  }
+}
+@media (min-width: 1200px) {
+  .infrastructure__house {
+    position: absolute;
+    top: 1140px;
+    left: 140px;
+    right: 325px;
+    width: 75px;
+    height: 72px;
+  }
+}
+.infrastructure__souvenirs {
+  position: absolute;
+  top: 1346px;
+  left: 25px;
+  right: 13px;
+  width: 32px;
+  height: 38px;
+}
+@media (min-width: 768px) {
+  .infrastructure__souvenirs {
+    position: absolute;
+    top: 1110px;
+    left: 586px;
+    right: 97px;
+    width: 64px;
+    height: 75px;
+  }
+}
+@media (min-width: 1200px) {
+  .infrastructure__souvenirs {
+    position: absolute;
+    top: 1140px;
+    left: 870px;
+    right: 170px;
+    width: 63px;
+    height: 75px;
+  }
+}
+.infrastructure__food {
+  position: absolute;
+  top: 1470px;
+  left: 18px;
+  right: 12px;
+  width: 40px;
+  height: 35px;
+}
+@media (min-width: 768px) {
+  .infrastructure__food {
+    position: absolute;
+    top: 1110px;
+    left: 340px;
+    right: 186px;
+    width: 76px;
+    height: 68px;
+  }
+}
+@media (min-width: 1200px) {
+  .infrastructure__food {
+    position: absolute;
+    top: 1148px;
+    left: 500px;
+    right: 330px;
+    width: 76px;
+    height: 69px;
+  }
+}
 .hotel-search {
   width: 100%;
   max-width: 280px;
@@ -908,6 +992,33 @@ img {
   .map iframe {
     width: 80%;
     max-width: 1200px;
+  }
+}
+.map-marker {
+  position: absolute;
+  top: 3235px;
+  left: 275px;
+  right: 147px;
+  z-index: 1;
+  width: 27px;
+  height: 27px;
+}
+@media (min-width: 768px) {
+  .map-marker {
+    position: absolute;
+    top: 2515px;
+    left: 375px;
+    right: 147px;
+    z-index: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .map-marker {
+    position: absolute;
+    top: 2465px;
+    left: 565px;
+    right: 147px;
+    z-index: 1;
   }
 }
 .page-footer {
@@ -1054,6 +1165,84 @@ img {
   .page-footer__copyright {
     display: flex;
     flex-direction: row;
+  }
+}
+.social__link-icon-twitter {
+  position: absolute;
+  top: 3538px;
+  left: 78px;
+  right: 14px;
+  background-color: #000000;
+}
+.social__link-icon-twitter:active {
+  opacity: 0.3;
+}
+@media (min-width: 768px) {
+  .social__link-icon-twitter {
+    position: absolute;
+    top: 2850px;
+    left: 280px;
+    right: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  .social__link-icon-twitter {
+    position: absolute;
+    top: 2798px;
+    left: 524px;
+    right: 14px;
+  }
+}
+.social__link-icon-facebook {
+  position: absolute;
+  top: 3535px;
+  left: 132px;
+  right: 14px;
+  background-color: #000000;
+}
+.social__link-icon-facebook:active {
+  opacity: 0.3;
+}
+@media (min-width: 768px) {
+  .social__link-icon-facebook {
+    position: absolute;
+    top: 2847px;
+    left: 335px;
+    right: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  .social__link-icon-facebook {
+    position: absolute;
+    top: 2795px;
+    left: 580px;
+    right: 14px;
+  }
+}
+.social__link-icon-youtube {
+  position: absolute;
+  top: 3538px;
+  left: 178px;
+  right: 14px;
+  background-color: #000000;
+}
+.social__link-icon-youtube:active {
+  opacity: 0.3;
+}
+@media (min-width: 768px) {
+  .social__link-icon-youtube {
+    position: absolute;
+    top: 2850px;
+    left: 385px;
+    right: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  .social__link-icon-youtube {
+    position: absolute;
+    top: 2799px;
+    left: 628px;
+    right: 14px;
   }
 }
 .review {
