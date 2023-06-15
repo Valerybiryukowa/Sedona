@@ -41,9 +41,6 @@
 }
 
 .photo-list__item {
-    background-image: url("../img/like-icon.svg.svg");
-    background-repeat: no-repeat;
-    background-position: 5% 75%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -116,9 +113,6 @@
 }
 
 .photo-list__item--big {
-    background-image: url("../img/like-icon.svg.svg");
-    background-repeat: no-repeat;
-    background-position: 5% 75%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -136,6 +130,22 @@
         bottom: 0;
         width: 100%;
         background-color: rgba(@black-color, 0.3);
+    }
+}
+
+.photo-list__icon-like--big {
+    position: absolute;
+    top: 84.62%;
+    bottom: 71.59%;
+    right: 85.37%;
+    left: 6.22%;
+
+    @media (min-width: @tablet-width) { 
+    position: absolute;
+    }
+
+    @media (min-width: @desktop-width) {
+        position: absolute;
     }
 }
 

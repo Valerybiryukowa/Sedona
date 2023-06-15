@@ -11,10 +11,14 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
-    <header class="page-header page-header__inner">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg.svg" width="101.7" height="84" alt="Логотип «Седона»">
-      </a>
+    <header class="page-header__form page-header__inner">
+        <a class="page-header__logo">
+            <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg.svg">
+            <img src="img/logotype-mobile.svg.svg" width="102" height="84" alt="Логотип «Седона»">
+            </picture>
+          </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
@@ -42,7 +46,7 @@
           </ul>
         </div>
       </nav>
-        <img class="page-header__imgtext" src="img/text-index.svg.svg" width="282" height="214" alt="Надпись добро пожаловать в Седону">
+      <img class="page-header__imgtext-form" src="img/SEDONA back form.svg" width="229" height="39" alt="Надпись Седона">
     </header>
 
     <main class="page-photo-main">
@@ -53,8 +57,10 @@
         <div class="photo__wrapper">
             <h2 class="photo__title">Фото и видео</h2>
             <p class="photo__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-            <img class="photo__imgline" src="img/line 8.svg" width="320" height="1" alt="Разделительная линия">
-        </div>
+            <svg class="photo__imgline" width="320" height="1" aria-label="Разделительная линия">
+                <use xlink:href="img/sprite.svg#icon-line 6"></use>
+        </svg>
+            </div>
     </section>
 
     <section class="photo-list">
@@ -71,8 +77,13 @@
                     <h3 class="photo-list__title">Неродные просторы</h3>
                     <p class="photo-list__authorname">Автор фото: Борис</p>
                     <p class="photo-list__likes">1350</p>
-                    <img class="photo-list__imgline" src="img/line 9.svg" width="320" height="1" alt="Разделительная линия">
-                </div>
+                    <svg class="photo-list__icon-like--big" width="23" height="21" aria-labelledby="icon-like">
+                    <use href="img/sprite.svg#icon-like"></use>
+                    </svg>
+                    <svg class="photo-list__imgline" width="320" height="1" aria-label="Разделительная линия">
+                        <use xlink:href="img/sprite.svg#icon-line 7"></use>
+                </svg>
+                    </div>
                 </li>
                 <li class="photo-list__item">
                 <picture>
@@ -84,8 +95,13 @@
                     <h3 class="photo-list__title">Местная растительность</h3>
                     <p class="photo-list__authorname">Автор фото: Сергей</p>
                     <p class="photo-list__likes">143</p>
-                    <img class="photo-list__imgline" src="img/line 10.svg" width="320" height="1" alt="Разделительная линия">
-                </div>
+                    <svg class="photo-list__icon-like" width="23" height="21" aria-labelledby="icon-like">
+                        <use href="img/sprite.svg#icon-like"></use>
+                        </svg>
+                    <svg class="photo-list__imgline" width="320" height="1" aria-label="Разделительная линия">
+                        <use xlink:href="img/sprite.svg#icon-line 8"></use>
+                </svg>
+                    </div>
                 </li>
                 <li class="photo-list__item">
                 <picture>
@@ -97,7 +113,12 @@
                     <h3 class="photo-list__title">Дорога на север</h3>
                     <p class="photo-list__authorname">Автор фото: Петр</p>
                     <p class="photo-list__likes">96</p>
-                    <img class="photo-list__imgline" src="img/line 11.svg" width="320" height="1" alt="Разделительная линия">
+                    <svg class="photo-list__icon-like" width="23" height="21" aria-labelledby="icon-like">
+                        <use href="img/sprite.svg#icon-like"></use>
+                        </svg>
+                    <svg class="photo-list__imgline" width="320" height="1" aria-label="Разделительная линия">
+                        <use xlink:href="img/sprite.svg#icon-line 9"></use>
+                    </svg>
                     </div>
                 </li>
                 <li class="photo-list__item">
@@ -110,8 +131,13 @@
                     <h3 class="photo-list__title">Мост дьявола</h3>
                     <p class="photo-list__authorname">Автор фото: Антон</p>
                     <p class="photo-list__likes">254</p>
-                    <img class="photo-list__imgline" src="img/line 12.svg" width="320" height="1" alt="Разделительная линия">
-                </div>
+                    <svg class="photo-list__icon-like" width="23" height="21" aria-labelledby="icon-like">
+                        <use href="img/sprite.svg#icon-like"></use>
+                        </svg>
+                    <svg class="photo-list__imgline" width="320" height="1" aria-label="Разделительная линия">
+                        <use xlink:href="img/sprite.svg#icon-line 10"></use>
+                </svg>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -133,9 +159,21 @@
             </picture>
             <div class="controls-video control-panel">
                 <div class="control-panel__volume-holder"><input class="control-panel__volume" type="range"></div>
-                <button class="control-panel__btn control-panel__btn--replay"><span class="visually-hidden">Повтор</span></button>
-                <button class="control-panel__btn control-panel__btn--subtitles"><span class="visually-hidden">Субтитры</span></button>
-                <button class="control-panel__btn control-panel__btn--fullscreen"><span class="visually-hidden">Весь экран</span></button>
+                <button class="control-panel__btn control-panel__btn--replay"><span class="visually-hidden">Повтор</span>
+                    <svg class="control-panel__icon-replay" width="16" height="20">
+                        <use xlink:href="img/sprite.svg#icon-replay"></use>
+                    </svg>
+                </button>
+                <button class="control-panel__btn control-panel__btn--subtitles"><span class="visually-hidden">Субтитры</span>
+                    <svg class="control-panel__icon-subtitles" width="32" height="20">
+                        <use xlink:href="img/sprite.svg#icon-subtitles"></use>
+                    </svg>
+                </button>
+                <button class="control-panel__btn control-panel__btn--fullscreen"><span class="visually-hidden">Весь экран</span>
+                    <svg class="control-panel__icon-fullscreen" width="20" height="20">
+                        <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
+                    </svg>
+                </button>
               </div>
             <!-- уровень громкости
             <div class="controls-video__scale">
@@ -173,19 +211,34 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" aria-label="Мы в твиттере.">
+                <svg role="img" class="social__link-icon-twittercatalog" width="18" height="15">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фэйсбуке</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в фэйсбуке.">
+                <svg role="img" class="social__link-icon-facebookcatalog" width="9" height="19">
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Мы в Ютубе</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g" aria-label="Мы в ютубе.">
+                <svg role="img" class="social__link-icon-youtubecatalog" width="20" height="14">
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" width="26.9" height="34.1" alt="Иконка HTML Academy"></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__link-icon" width="27" height="34.1">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+            </svg>
       </div>
     </div>
   </footer>

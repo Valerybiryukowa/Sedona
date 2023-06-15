@@ -44,11 +44,29 @@
   @media (min-width: @tablet-width) {
     font-size: 21px;
     text-align: center;
+
+    &::before {
+    content: url("../img/Layer\ 27\ copy\ 3.\ tabletsvg.svg");
+    top: 978px;
+    left: 160%;
+    }
+
+    &::after {
+        content: url("../img/Layer\ 27\ copy\ 5\ tablet.svg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     padding-bottom: 71px;
     text-align: center;
+
+    &::before {
+        content: url("../img/Layer\ 27\ copy\ 3\ desktop.svg");
+    }
+
+    &::after {
+        content: url("../img/Layer\ 27\ copy\ 3.\ desktop\ 2svg.svg");
+    }
   }
 }
 
@@ -113,3 +131,49 @@
         display: none;
     }
 }
+
+.contactinfo__icon-phone {
+    position: absolute;
+    top: 36.22%;
+    left: 82.19%;
+    right: 12.19%;
+    bottom: 63%;
+    background: @grey-2-color;
+
+    @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 36.22%;
+    left: 82.19%;
+    right: 12.19%;
+    bottom: 63%;
+    background: @grey-2-color;
+    }
+
+    @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 56.73%;
+    left: 40.86%;
+    right: 57.73%;
+    bottom: 42.36%;
+    background: @grey-2-color;
+    }
+}
+
+.contactinfo__icon-mail {
+    position: absolute;
+    top: 62.79%;
+    left: 82.19%;
+    right: 12.81%;
+    bottom: 58.69%;
+    background: @grey-2-color;
+
+    @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 62.79%;
+    left: 82.19%;
+    right: 12.81%;
+    bottom: 58.69%;
+    background: @grey-2-color;
+    }
+}
+

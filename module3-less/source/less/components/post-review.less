@@ -36,6 +36,24 @@
         font-size: 21px;
         text-align: center;
         padding-bottom: 54px;
+
+        &::before {
+            content: url("../img/Layer\ 27\ copy\ 3.\ tabletsvg.svg");
+            }
+
+            &::after {
+                content: url("../img/Layer\ 27\ copy\ 5\ tablet.svg");
+            }
+    }
+
+    @media (min-width: @desktop-width) {
+        &::before {
+            content: url("../img/Layer\ 27\ copy\ 3\ desktop.svg");
+        }
+    
+        &::after {
+            content: url("../img/Layer\ 27\ copy\ 3.\ desktop\ 2svg.svg");
+        }
     }
 }
 
