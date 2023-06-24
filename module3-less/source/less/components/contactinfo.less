@@ -41,31 +41,44 @@
     margin: 0;
     text-align: center;
 
-  @media (min-width: @tablet-width) {
+    @media (min-width: @tablet-width) {
     font-size: 21px;
     text-align: center;
 
     &::before {
-    content: url("../img/Layer\ 27\ copy\ 3.\ tabletsvg.svg");
-    top: 978px;
-    left: 160%;
-    }
-
-    &::after {
-        content: url("../img/Layer\ 27\ copy\ 5\ tablet.svg");
-    }
-  }
+        content: "";
+        background-image: url("../img/Layer\ 27\ copy\ 3.\ tabletsvg.svg");
+        background-repeat: no-repeat;
+        width: 123px;
+        height: 1px;
+        padding-bottom: 6px;
+        padding-left: 180px;
+        background-position: center left;
+        }
+    
+        &::after {
+            content: "";
+            background-image: url("../img/Layer\ 27\ copy\ 5\ tablet.svg");
+            width: 123px;
+            height: 1px;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: center right;
+        }
+        }
 
   @media (min-width: @desktop-width) {
     padding-bottom: 71px;
     text-align: center;
 
     &::before {
-        content: url("../img/Layer\ 27\ copy\ 3\ desktop.svg");
+        content: "";
+        background-image: url("../img/Layer\ 27\ copy\ 3\ desktop.svg");
     }
 
     &::after {
-        content: url("../img/Layer\ 27\ copy\ 3.\ desktop\ 2svg.svg");
+        content: "";
+        background-image: url("../img/Layer\ 27\ copy\ 3.\ desktop\ 2svg.svg");
     }
   }
 }
@@ -115,9 +128,11 @@
     }
 }
 
+
 .contactinfo__item {
     margin-right: 79px;
     padding-bottom: 28px;
+    
 
     @media (min-width: @desktop-width) {
         display: flex;
@@ -125,6 +140,7 @@
         padding-bottom: 51px;
     }
 }
+
 
 .contactinfo__imgline {
     @media (min-width: @tablet-width) {
@@ -134,18 +150,20 @@
 
 .contactinfo__icon-phone {
     position: absolute;
-    top: 36.22%;
+    top: 37.25%;
     left: 82.19%;
-    right: 12.19%;
-    bottom: 63%;
-    background: @grey-2-color;
+    right: 18px;
+    bottom: 18px;
+    width: 18px;
+    height: 18px;
+    z-index: 1;
 
     @media (min-width: @tablet-width) {
     position: absolute;
     top: 36.22%;
-    left: 82.19%;
-    right: 12.19%;
-    bottom: 63%;
+    left: 87.19%;
+    right: 19px;
+    bottom: 5px;
     background: @grey-2-color;
     }
 
@@ -161,19 +179,87 @@
 
 .contactinfo__icon-mail {
     position: absolute;
-    top: 62.79%;
+    top: 65.50%;
     left: 82.19%;
-    right: 12.81%;
-    bottom: 58.69%;
-    background: @grey-2-color;
+    right: 21px;
+    bottom: 23px;
+
 
     @media (min-width: @tablet-width) {
-    position: absolute;
-    top: 62.79%;
-    left: 82.19%;
-    right: 12.81%;
-    bottom: 58.69%;
-    background: @grey-2-color;
+        position: absolute;
+        top: 62.79%;
+        left: 82.19%;
+        right: 12.81%;
+        bottom: 58.69%;
+    }
+
+    @media (min-width: @desktop-width) {
+        position: absolute;
+        top: 62.79%;
+        left: 82.19%;
+        right: 12.81%;
+        bottom: 58.69%;
     }
 }
+
+.contactinfo__phone {
+
+    &::before {
+        position: absolute;
+        width: 58px;
+        height: 58px;
+        content: "";
+        background-color: @grey-2-color;
+        right: 0;
+        bottom: 0;
+        left: 392px;
+        top: 67px;
+    }
+
+    @media (min-width: @tablet-width) {
+        &::before {
+            position: absolute;
+            width: 58px;
+            height: 58px;
+            content: "";
+            background-color: @grey-2-color;
+            right: 0;
+            bottom: 0;
+            left: 292px;
+            top: 267px;
+        }
+    }
+
+    @media (min-width: @desktop-width) {
+        &::before {
+            position: absolute;
+            width: 58px;
+            height: 58px;
+            content: "";
+            background-color: @grey-2-color;
+            right: 0;
+            bottom: 0;
+            left: 392px;
+            top: 67px;
+        }
+    }
+
+}
+
+.contactinfo__mail {
+
+    &::before {
+        position: absolute;
+        width: 58px;
+        height: 58px;
+        content: "";
+        background-color: @grey-2-color;
+        right: 0;
+        bottom: 0;
+        left: 349px;
+        top: 67px;
+    }
+}
+
+
 

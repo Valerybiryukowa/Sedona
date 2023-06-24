@@ -7,14 +7,6 @@
     max-width: 473px;
     padding-right: 160px;
     padding-left: 135px;
-
-    &::before {
-        content: url("../img/Layer\ 27\ copy\ 3.\ tabletsvg.svg");
-    }
-
-    &::after {
-        content: url("../img/Layer\ 27\ copy\ 5\ tablet.svg");
-    }
     }
 
     @media (min-width: @desktop-width) {
@@ -22,14 +14,6 @@
     max-width: 960px;
     padding-right: 125px;
     padding-left: 94px;
-
-    &::before {
-        content: url("../img/Layer\ 27\ copy\ 3\ desktop.svg");
-    }
-
-    &::after {
-        content: url("../img/Layer\ 27\ copy\ 3.\ desktop\ 2svg.svg");
-    }
     }
 }
 
@@ -77,6 +61,28 @@
         padding-top: 51px;
         font-size: 21px;
         padding-bottom: 48px;
+
+        &::before {
+            content: url("../img/Layer\ 27\ copy\ 3.\ tabletsvg.svg");
+            background-repeat: no-repeat;
+        }
+    
+        &::after {
+            content: url("../img/Layer\ 27\ copy\ 5\ tablet.svg");
+            background-repeat: no-repeat;
+        }
+    }
+
+    @media (min-width: @desktop-width) {
+        &::before {
+            content: url("../img/Layer\ 27\ copy\ 3\ desktop.svg");
+            background-repeat: no-repeat;
+        }
+    
+        &::after {
+            content: url("../img/Layer\ 27\ copy\ 3.\ desktop\ 2svg.svg");
+            background-repeat: no-repeat;
+        }
     }
 }
 
@@ -120,4 +126,10 @@
     background-color: @grey-4-color;
     border: 5px solid @grey-4-color;
     color: rgba(@light-black-color, 0.3);
+}
+
+.attractions__imgline {
+    @media (min-width: @tablet-width) {
+        display: none;
+    }
 }

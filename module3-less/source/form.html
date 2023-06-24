@@ -7,7 +7,7 @@
   <link rel="stylesheet" rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,700&family=Roboto&display=swap">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/180.png">
@@ -61,11 +61,12 @@
             <h2 class="review__title">Оставьте свой отзыв</h2>
             <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
             <svg class="review__imgline" width="320" height="1" aria-label="Разделительная линия">
-                <use xlink:href="img/sprite.svg#icon-line 1"></use>
+                <use xlink:href="img/sprite.svg#line 3"></use>
         </svg>
             </div>
     </section>
 
+   <div class="form-main__form">
     <section class="representation">
         <div class="representation__wrapper">
             <h2 class="representation__title">Представьтесь:</h2>
@@ -83,7 +84,7 @@
                     <input id="representation__patronymic" type="text" name="patronymic" placeholder="Александрович" required>
                 </p>
                 <svg class="representation__imgline" width="320" height="1" aria-label="Разделительная линия">
-                    <use href="img/sprite.svg#icon-line 2"></use>
+                    <use xlink:href="img/sprite.svg#line 4"></use>
             </svg>
                 </form>
         </div>
@@ -94,22 +95,26 @@
         <div class="contactinfo__wrapper">
             <h2 class="contactinfo__title">Контактная информация:</h2>
             <form class="contactinfo__form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="contactinfo__phone">
                 <p class="contactinfo__item">
                     <label for="contactinfo__telephone">Контактный телефон*:</label>
                     <input id="contactinfo__telephone--phone" type="number" name="telephone" placeholder="Введите телефон" required>
                     <svg class="contactinfo__icon-phone" width="18" height="18" aria-labelledby="icon-phone">
-                        <use xlink:href="img/sprite.svg#icon-phone"></use>
+                        <use xlink:href="img/sprite.svg#phone.svg"></use>
                     </svg>
                 </p>
+            </div>
+            <div class="contactinfo__mail"> 
                 <p class="contactinfo__item">
                     <label for="contactinfo__email">Электронная почта*:</label>
                     <input id="contactinfo__email--mail" type="text" name="email" placeholder="Введите e-mail" required>
                     <svg class="contactinfo__icon-mail" width="16" height="12" aria-labelledby="icon-mail">
-                        <use href="img/sprite.svg#icon-mail"></use>
+                        <use xlink:href="img/sprite.svg#mail.svg"></use>
                     </svg>
                 </p>
+            </div>
                 <svg class="contactinfo__imgline" width="320" height="1" aria-label="Разделительная линия">
-                    <use href="img/sprite.svg#icon-line 3"></use>
+                    <use xlink:href="img/sprite.svg#line 5"></use>
             </svg>
                 </form>
         </div>
@@ -136,12 +141,12 @@
                     </ul>
                 </fieldset>
                 <svg class="impression__imgline" width="320" height="1" aria-label="Разделительная линия">
-                    <use xlink:href="img/sprite.svg#icon-line 4"></use>
+                    <use xlink:href="img/sprite.svg#line 11"></use>
             </svg>
                 </form>
         </div>
     </section>
-
+</div>
 
     <section class="attractions">
         <form class="attractions__form" action="https://echo.htmlacademy.ru" method="get">
@@ -167,7 +172,7 @@
                 </ul>
             </fieldset>
             <svg class="attractions__imgline" width="320" height="1" aria-label="Разделительная линия">
-                <use xlink:href="img/sprite.svg#icon-line 5"></use>
+                <use xlink:href="img/sprite.svg#line 7"></use>
         </svg>
             </form>
     </section>
@@ -215,21 +220,21 @@
               <li class="social__item">
                 <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" aria-label="Мы в твиттере.">
                     <svg role="img" class="social__link-icon-twitterform" width="18" height="15">
-                      <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                      <use xlink:href="img/sprite.svg#icon-twitter.svg"></use>
                     </svg>
                   </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в фэйсбуке.">
                     <svg role="img" class="social__link-icon-facebookform" width="9" height="19">
-                      <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                      <use xlink:href="img/sprite.svg#icon-facebook.svg"></use>
                     </svg>
                   </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g" aria-label="Мы в ютубе.">
                     <svg role="img" class="social__link-icon-youtubeform" width="20" height="14">
-                      <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                      <use xlink:href="img/sprite.svg#icon-youtube.svg"></use>
                     </svg>
                   </a>
               </li>
@@ -239,7 +244,7 @@
             <b class="copyright__text">Разработано</b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
                 <svg class="copyright__link-icon" width="27" height="34.1">
-                    <use xlink:href="img/sprite.svg#icon-link"></use>
+                    <use xlink:href="img/sprite.svg#htmlacademy"></use>
                 </svg>
           </div>
         </div>
@@ -247,4 +252,4 @@
 
   <script src="js/main-nav.js"></script>
 </body>
-</html
+</html>

@@ -31,6 +31,8 @@
     font-size: 18px;
     padding-bottom: 15px;
     align-items: center;
+    position: relative;
+
 
     @media (min-width: @tablet-width) {
         font-size: 21px;
@@ -49,10 +51,14 @@
     @media (min-width: @desktop-width) {
         &::before {
             content: url("../img/Layer\ 27\ copy\ 3\ desktop.svg");
+            background-position: center;
+            
+            
         }
     
         &::after {
             content: url("../img/Layer\ 27\ copy\ 3.\ desktop\ 2svg.svg");
+            
         }
     }
 }

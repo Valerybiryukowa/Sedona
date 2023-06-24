@@ -28,32 +28,18 @@
 
     @media (min-width: @tablet-width) {
         padding: 0;
+        padding-top: 16px;
         color: @black-color;
         background: none;
-        border: none;
+        border-top: none;
+        box-shadow: none;
+        text-decoration: none;
     }
 }
 
 .main-nav--nojs .site-list__item {
     display: block;
 }
-
-
-.site-list__item {
-
-    @media (min-width: @tablet-width) {
-        padding-right: 33px;
-        
-
-        &:last-child {
-            padding-right: 0;
-          }
-    }
-
-        &:last-child {
-            margin-right: 0;
-          }
-    }
 
 
 .site-list__item a[href] {
@@ -87,3 +73,15 @@
         color: @brown-color;
     }
 }
+
+@media (min-width: @tablet-width) {
+    .site-list {
+      width: 594px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .site-list {
+      width: 940px;
+    }
+  }
