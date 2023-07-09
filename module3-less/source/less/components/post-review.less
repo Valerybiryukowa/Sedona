@@ -1,50 +1,64 @@
 .post-review {
     width: 100%;
-    max-width: 279px;
+    max-width: 320px;
+    outline: 3px solid rgba(143, 188, 143, 1);
 
     @media (min-width: @tablet-width) {
     width: 90%;
-    max-width: 648px;
-    padding-right: 60px;
-    padding-left: 60px;
+    max-width: 768px;
     }
 
     @media (min-width: @desktop-width) {
-    width: 80%;
-    max-width: 960px;
+    max-width: 1200px;
     }
 }
 
-.contactinfo__form {
+.post-review__form {
+    outline: 3px solid rgba(72, 61, 139, 1);
+    padding-left: 19px;
+    padding-right: 22px;
+
     @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: center;
+    padding-left: 60px;
+    padding-right: 60px;
     }
 
     @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: center;
+    padding-left: 120px;
+    padding-right: 120px;
     }
 }
 
 .post-review__title {
     font-size: 18px;
-    padding-bottom: 15px;
     align-items: center;
     position: relative;
+    padding-left: 38px;
+    padding-right: 37px;
+    padding-top: 20px;
+    outline: 3px solid rgba(0, 206, 209, 1);
 
 
     @media (min-width: @tablet-width) {
         font-size: 21px;
         text-align: center;
+        margin: 0;
         padding-bottom: 54px;
 
         &::before {
             content: url("../img/Layer\ 27\ copy\ 3.\ tabletsvg.svg");
+            outline: 3px solid rgba(255, 20, 147, 1);
+            padding-right: 60px;
             }
 
             &::after {
                 content: url("../img/Layer\ 27\ copy\ 5\ tablet.svg");
+                outline: 3px solid rgba(255, 20, 147, 1);
+                padding-left: 62px;
             }
     }
 
@@ -52,13 +66,12 @@
         &::before {
             content: url("../img/Layer\ 27\ copy\ 3\ desktop.svg");
             background-position: center;
-            
-            
+            padding-right: 59px;
         }
     
         &::after {
             content: url("../img/Layer\ 27\ copy\ 3.\ desktop\ 2svg.svg");
-            
+            padding-left: 61px;
         }
     }
 }
@@ -71,6 +84,7 @@
     width: 280px;
     height: 58px;
     border: none;
+    outline: 3px solid rgba(30, 144, 255, 1);
 
     &:hover {
         background-color: @dark-blue-color;
@@ -93,13 +107,25 @@
 .post-review__fields {
     font-weight: 400;
     color: @light-black-color;
+    font-size: 14px;
+    outline: 3px solid rgba(34, 139, 34, 1);
+
+    @media (max-width: @mobile-width-only) {
+        display: none;
+    }
 }
 
 .post-review__bf {
+    @media (max-width: @mobile-width-only) {
+    margin-left: 19px;
+    padding-top: 51px;
+    }
+
     @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     max-width: 648px;
+    margin-left: 60px;
     padding-top: 58px;
     }
 
@@ -107,6 +133,7 @@
     display: flex;
     justify-content: space-between;
     max-width: 960px;
+    margin-left: 120px;
     }
 }
 

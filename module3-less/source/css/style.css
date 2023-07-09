@@ -1103,7 +1103,9 @@ img {
 }
 .page-footer__hastag {
   font-size: 21px;
-  padding-bottom: 34px;
+  margin-top: 20px;
+  margin-bottom: 34px;
+  outline: 3px solid rgba(255, 127, 80);
 }
 @media (min-width: 768px) {
   .page-footer__hastag {

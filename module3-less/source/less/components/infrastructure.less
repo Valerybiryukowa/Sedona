@@ -1,8 +1,9 @@
 .infrastructure {
     width: 100%;
-    max-width: 288px;
+    max-width: 320px;
     padding-top: 35px;
-    padding-left: 69px;
+    padding-bottom: 35px;
+    outline: 3px solid rgba(135, 206, 250, 1);
 
     @media (min-width: @tablet-width) {
     width: 90%;
@@ -13,35 +14,73 @@
     }
 
     @media (min-width: @desktop-width) {
-    width: 80%;
     max-width: 1200px;
     }
 }
 
-.infrastructure__wrapper {
+/*.infrastructure__wrapper {
+    outline: 3px solid rgba(102, 205, 170, 1);
     @media (min-width: @tablet-width) {
-        padding-right: 36px;
-        padding-left: 31px;
-        max-width: 768px;
+        margin-right: 31px;
+        margin-left: 36px;
     }
 
     @media (min-width: @desktop-width) {
-        max-width: 1200px;
+        margin-right: 78px;
+        margin-left: 58px;
+    }
+}*/
+
+.infrastructure__item--housing {
+    @media (min-width: @tablet-width) {
+        margin-left: 36px;
+        padding-right: 73px;
+    }
+
+    @media (min-width: @desktop-width) {
+        margin-left: 58px;
+        padding-right: ;
+        width: 282px;
     }
 }
+
+.infrastructure__item--food {
+    @media (min-width: @tablet-width) {
+        padding-right: 70px;
+    }
+
+    @media (min-width: @desktop-width) {
+        padding-right: 121px;
+    }
+}
+
+.infrastructure__item--souvenirs {
+    @media (min-width: @tablet-width) {
+        margin-right: 31px;
+        order: 1;
+    }
+
+    @media (min-width: @desktop-width) {
+        margin-right: 78px;
+    }
+}
+
 
 .infrastructure__list {
     display: grid;
     list-style-type: none;
     padding: 0;
     margin: 0;
+    outline: 3px solid rgba(186, 85, 211, 1);
 
     @media (min-width: @tablet-width) {
-    grid-template-columns: 1fr 1fr 1fr;
-        }
+    display: flex;
+    justify-content: space-between;
+    }
 
     @media (max-width: @mobile-width-only) {
         row-gap: 26px;
+        margin-left: 69px;
     }
 }
 
@@ -112,18 +151,20 @@
 .infrastructure__item {
     text-align: left;
     max-width: 288px;
+    outline: 3px solid rgba(72, 209, 204, 1);
 
 
     @media (min-width: @tablet-width) {
-        padding: 158px 38px 60px;
+        padding-top: 158px;
+        padding-bottom: 60px;
         text-align: center;
         line-height: 26px;
+        padding-right: 15px;
     }
 
     @media (min-width: @desktop-width) {
         padding-top: 159px;
         padding-bottom: 80px;
-        padding-right: 104px;
         text-align: center;
     }
 
@@ -135,19 +176,21 @@
     }
 }
 
-
 .infrastructure__description {
     font-weight: 400;
     margin: 0;
+    font-size: 16px;
 
-    @media (min-width: @tablet-width) {
-        font-size: 18px;
+    @media (min-width: @desktop-width) {
+        br {
+            display: none;
+        }
     }
 }
 
 .infrastructure__house {
     position: absolute;
-    top: 1200px;
+    top: 1150px;
     left: 21px;
     right: 9px;
     width: 39px;
@@ -155,8 +198,9 @@
 
     @media (min-width: @tablet-width) {
     position: absolute;
+    background-image: url("../img/icon-house\ tablet.svg.svg");
     top: 1110px;
-    left: 90px;
+    left: 105px;
     right: 180px;
     width: 75px;
     height: 72px;
@@ -164,17 +208,34 @@
 
     @media (min-width: @desktop-width) {
         position: absolute;
-        top: 1140px;
-        left: 140px;
-        right: 325px;
+        top: 1100px;
+        left: 205px;
         width: 75px;
         height: 72px;
     }
 }
 
+.infrastructure__house use {
+    @media (min-width: @tablet-width) {
+        display: none;
+    }
+}
+
+.infrastructure__souvenirs use {
+    @media (min-width: @tablet-width) {
+        display: none;
+    }
+}
+
+.infrastructure__food use {
+    @media (min-width: @tablet-width) {
+        display: none;
+    }
+}
+
 .infrastructure__souvenirs {
     position: absolute;
-    top: 1346px;
+    top: 1295px;
     left: 25px;
     right: 13px;
     width: 32px;
@@ -182,6 +243,7 @@
 
     @media (min-width: @tablet-width) {
         position: absolute;
+        background-image: url("../img/icon-gift\ tablet.svg.svg");
         top: 1110px;
         left: 586px;
         right: 97px;
@@ -191,8 +253,8 @@
 
         @media (min-width: @desktop-width) {
             position: absolute;
-            top: 1140px;
-            left: 870px;
+            top: 1100px;
+            left: 920px;
             right: 170px;
             width: 63px;
             height: 75px;
@@ -201,7 +263,7 @@
 
 .infrastructure__food {
     position: absolute;
-    top: 1470px;
+    top: 1425px;
     left: 18px;
     right: 12px;
     width: 40px;
@@ -209,6 +271,7 @@
 
     @media (min-width: @tablet-width) {
         position: absolute;
+        background-image: url("../img/icon-burger\ tablet.svg.svg");
         top: 1110px;
         left: 340px;
         right: 186px;
@@ -218,11 +281,16 @@
 
         @media (min-width: @desktop-width) {
             position: absolute;
-            top: 1148px;
-            left: 500px;
+            top: 1100px;
+            left: 560px;
             right: 330px;
             width: 76px;
             height: 69px;
         }
 }
+
+
+
+
+
 

@@ -1,19 +1,20 @@
 .attractions {
     width: 100%;
-    max-width: 268px;
+    max-width: 320px;
+    outline: 3px solid rgba(0, 206, 209, 1);
 
     @media (min-width: @tablet-width) {
     width: 90%;
     max-width: 473px;
-    padding-right: 160px;
-    padding-left: 135px;
+    padding-left: 160px;
+    padding-right: 135px;
     }
 
     @media (min-width: @desktop-width) {
     width: 80%;
-    max-width: 960px;
-    padding-right: 125px;
-    padding-left: 94px;
+    max-width: 981px;
+    padding-right: 94px;
+    padding-left: 125px;
     }
 }
 
@@ -22,7 +23,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    padding-bottom: 30px;
+    outline: 3px solid rgba(153, 50, 204, 1);
 
     @media (min-width: @tablet-width) {
     display: grid;
@@ -35,17 +36,20 @@
     }
 }
 
-.attractions__item label {
-    text-transform: none;
+.attractions__item {
+    outline: 3px solid rgba(143, 188, 143, 1);
 }
 
-.attractions__item input {
+.attractions__item:not(:last-child) {
     padding-bottom: 34px;
 
     @media (min-width: @tablet-width) {
         padding-bottom: 42px;
     }
+}
 
+.attractions__item label {
+    text-transform: none;
 }
 
 .attractions__fieldset {
@@ -56,9 +60,9 @@
     text-align: center;
     padding-top: 15px;
     padding-bottom: 25px;
+    outline: 3px solid rgba(233, 150, 122, 1);
 
     @media (min-width: @tablet-width) {
-        padding-top: 51px;
         font-size: 21px;
         padding-bottom: 48px;
 
@@ -74,13 +78,18 @@
     }
 
     @media (min-width: @desktop-width) {
+        padding-bottom: 47px;
+        
         &::before {
             content: url("../img/Layer\ 27\ copy\ 3\ desktop.svg");
+            background-size: 280px 1px;
             background-repeat: no-repeat;
+            background-position: center;
         }
     
         &::after {
             content: url("../img/Layer\ 27\ copy\ 3.\ desktop\ 2svg.svg");
+            background-size: 280px 1px;
             background-repeat: no-repeat;
         }
     }
