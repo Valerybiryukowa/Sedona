@@ -1,60 +1,32 @@
-# Личный проект «{{projectTitle}}» 
+# Личный проект «{{Sedona}}»
 
-* Студент: [{{userName}}]({{userProfile}}).
-* Наставник: `Неизвестно`.
+Решение для [Sedona](https://sedona.vercel.app/index.html).
 
----
+## Обзор
 
-**Обратите внимание, что папка с вашими исходными файлами — `source/`.**
+Седона - сервис по поиску гостиниц в небольшом городке с одноименным названием, просмотр фотографий города и возможностью оставить свой отзыв о гостиницах и посещенных достопримечательностях города.
 
-Полезный файл:
+### Скриншот
 
-## Решение для https://sedona.netlify.app
+![](./screenshot.jpg)
 
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
+### Ссылки
 
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
+- Live Site URL: [Kekstagram](https://kekstagram-app.netlify.app/)
 
----
+### Спроектирован с помощью
 
-### Памятка
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Vanilla JS
+- Fetch API
+- [NoUiSlider](https://refreshless.com/nouislider/) - Легкий слайдер диапазона JavaScript с полной поддержкой сенсорного управления
+- [PristineJs](https://pristine.js.org/) - Vanilla javascript проверки формы javascript
 
-#### 1. Зарегистрируйтесь на Гитхабе
+### Изучено
 
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
+Изучена организация кода с помощью ES-модулей, замыканий, прослушивателей событий и DOM, как получать API. Кроме того, получены глубокие фундаментальные знания концепций JS, используемых в веб-разработке.
 
-#### 2. Создайте форк
-
-[Откройте мастер-репозиторий]({{homepage}}) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60807979-e1129f00-a18f-11e9-90d7-b44d2ff2c003.jpg">
-
-Получится вот так:
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60807980-e1129f00-a18f-11e9-8137-45876f130340.jpg">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60807982-e1129f00-a18f-11e9-98c4-0d3bf4b85cf1.jpg">
-
-Клонировать репозиторий можно так:
-
-```
-git clone SSH-адрес_вашего_форка
-```
-
-Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
-
-#### 4. Начинайте обучение!
-
----
-
-<a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
-
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
-
-[check-image]: https://github.com/htmlacademy-adaptive/{{userId}}-{{projectName}}/workflows/Project%20check/badge.svg?branch=master
-[check-url]: https://github.com/htmlacademy-adaptive/{{userId}}-{{projectName}}/actions
+## Благодарности
