@@ -8,7 +8,7 @@
 
 ### Скриншот
 
-![] (https://github.com/Valerybiryukowa/Sedona-2/blob/main/module3-less/screenshot.png?raw=true)
+![](./screenshot.png)
 
 ### Используемые технологии
 
