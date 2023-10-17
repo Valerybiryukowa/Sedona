@@ -16,12 +16,12 @@ import svgstore from 'gulp-svgstore';
 // Styles
 
 export const styles = () => {
-  return gulp.src('source/less/style.less', { sourcemaps: true })
+    return gulp.src('source/less/style.less', { sourcemaps: true })
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
-      autoprefixer(),
-      csso()
+        autoprefixer(),
+        csso()
     ]))
     .pipe (rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
@@ -31,15 +31,15 @@ export const styles = () => {
 // Server
 
 const server = (done) => {
-  browser.init({
+    browser.init({
     server: {
-      baseDir: 'build'
+        baseDir: 'build'
     },
     cors: true,
     notify: false,
     ui: false,
-  });
-  done();
+    });
+    done();
 }
 
 //HTML 
@@ -52,7 +52,7 @@ const html = () => {
 
 //Scripts 
 
-const scripts = () => {
+export const scripts = () => {
     return gulp.src('source/js/*.js')
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
@@ -88,7 +88,7 @@ const svg = () =>
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
-export const sprite = () => {
+const sprite = () => {
         return gulp.src('source/img/icons/*.svg')
           .pipe(svgo())
           .pipe(svgstore({
@@ -137,7 +137,8 @@ function watcher() {
 
 //Build
 
-export const build = gulp.series(
+
+const build = gulp.series(
     clean,
     copy,
     optimizeImages,
@@ -145,6 +146,7 @@ export const build = gulp.series(
         styles,
         html,
         scripts,
+        sprite,
         svg,
         createWebp
     ),
@@ -160,6 +162,7 @@ export const develop = gulp.series(
         styles,
         html,
         scripts,
+        sprite,
         svg,
         createWebp
     ),
@@ -167,3 +170,7 @@ export const develop = gulp.series(
         server,
         watcher
     ));
+
+    export default gulp.series(
+        develop, build, watcher, reload, clean, copy, sprite, svg, createWebp, copyImages, optimizeImages, scripts, html, server, styles
+    );
